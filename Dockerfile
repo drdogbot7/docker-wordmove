@@ -8,8 +8,8 @@ FROM ruby:2.7-slim
 LABEL maintainers.1="Simon Bland <simon.bland@bluewin.ch>"
 LABEL maintainers.2="Alessandro Fazzi <alessandro.fazzi@welaika.com>"
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV WORDMOVE_WORKDIR /var/www/html
+ENV DEBIAN_FRONTEND=noninteractive
+ENV WORDMOVE_WORKDIR=/var/www/html
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
