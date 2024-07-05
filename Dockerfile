@@ -51,6 +51,7 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
+RUN gem install ed25519 bcrypt_pbkdf
 
 RUN gem install wordmove --version 5.2.2
 
